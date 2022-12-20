@@ -1,0 +1,684 @@
+Archive member included because of file (symbol)
+
+e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./MCAL/MTIMER/MTIMER_Program.o (__udivmodsi4)
+e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./HAL/HUS/HUS_Program.o (__do_copy_data)
+e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/MTIMER/MTIMER_Program.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+states              0x1               ./main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/MUSART/MSUART_Program.o
+LOAD ./MCAL/MTWI/MTWI_Program.o
+LOAD ./MCAL/MTIMER/MTIMER_Program.o
+LOAD ./MCAL/MSPI/MSPI_Program.o
+LOAD ./MCAL/MGIE/MGIE_Program.o
+LOAD ./MCAL/MEXTI/MEXTI_Program.o
+LOAD ./MCAL/MDIO/MDIO_Program.o
+LOAD ./MCAL/MADC/MADC_Program.o
+LOAD ./HAL/HUS/HUS_Program.o
+LOAD ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+LOAD ./HAL/HSERVO/HSERVO_Programe.o
+LOAD ./HAL/HKPD/HKPD_Program.o
+LOAD ./HAL/HDCM/HDCM_Program.o
+LOAD ./HAL/HCLCD/HCLCD_Program.o
+LOAD ./HAL/EEPROM/EEPROM_Program.o
+LOAD ./main.o
+LOAD e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1448
+ *(.vectors)
+ .vectors       0x00000000       0x54 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./MCAL/MUSART/MSUART_Program.o
+ .text          0x00000092        0x0 ./MCAL/MTWI/MTWI_Program.o
+ .text          0x00000092        0x0 ./MCAL/MTIMER/MTIMER_Program.o
+ .text          0x00000092        0x0 ./MCAL/MSPI/MSPI_Program.o
+ .text          0x00000092        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .text          0x00000092        0x0 ./MCAL/MEXTI/MEXTI_Program.o
+ .text          0x00000092        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .text          0x00000092        0x0 ./MCAL/MADC/MADC_Program.o
+ .text          0x00000092        0x0 ./HAL/HUS/HUS_Program.o
+ .text          0x00000092        0x0 ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+ .text          0x00000092        0x0 ./HAL/HSERVO/HSERVO_Programe.o
+ .text          0x00000092        0x0 ./HAL/HKPD/HKPD_Program.o
+ .text          0x00000092        0x0 ./HAL/HDCM/HDCM_Program.o
+ .text          0x00000092        0x0 ./HAL/HCLCD/HCLCD_Program.o
+ .text          0x00000092        0x0 ./HAL/EEPROM/EEPROM_Program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.MSUART_Init
+                0x00000092       0x10 ./MCAL/MUSART/MSUART_Program.o
+                0x00000092                MSUART_Init
+ .text.MSUART_SendChar
+                0x000000a2        0x8 ./MCAL/MUSART/MSUART_Program.o
+                0x000000a2                MSUART_SendChar
+ .text.MSUART_RecieveChar
+                0x000000aa        0x8 ./MCAL/MUSART/MSUART_Program.o
+                0x000000aa                MSUART_RecieveChar
+ .text.MUSART_SendString
+                0x000000b2       0x1a ./MCAL/MUSART/MSUART_Program.o
+                0x000000b2                MUSART_SendString
+ .text.MUSART_ReceiveString
+                0x000000cc       0x1c ./MCAL/MUSART/MSUART_Program.o
+                0x000000cc                MUSART_ReceiveString
+ .text.MTWI_MasterInit
+                0x000000e8       0x36 ./MCAL/MTWI/MTWI_Program.o
+                0x000000e8                MTWI_MasterInit
+ .text.MTWI_SlaveInit
+                0x0000011e       0x32 ./MCAL/MTWI/MTWI_Program.o
+                0x0000011e                MTWI_SlaveInit
+ .text.MTWI_SendStartCondition
+                0x00000150       0x22 ./MCAL/MTWI/MTWI_Program.o
+                0x00000150                MTWI_SendStartCondition
+ .text.MTWI_SendSlaveAddress_WithWrite
+                0x00000172       0x26 ./MCAL/MTWI/MTWI_Program.o
+                0x00000172                MTWI_SendSlaveAddress_WithWrite
+ .text.MTWI_SendSlaveAddress_WithRead
+                0x00000198       0x28 ./MCAL/MTWI/MTWI_Program.o
+                0x00000198                MTWI_SendSlaveAddress_WithRead
+ .text.MTWI_MasterSlaveWriteData
+                0x000001c0       0x1e ./MCAL/MTWI/MTWI_Program.o
+                0x000001c0                MTWI_MasterSlaveWriteData
+ .text.MTWI_MasterSlaveReadData
+                0x000001de       0x22 ./MCAL/MTWI/MTWI_Program.o
+                0x000001de                MTWI_MasterSlaveReadData
+ .text.MTWI_SendStopCondtition
+                0x00000200       0x16 ./MCAL/MTWI/MTWI_Program.o
+                0x00000200                MTWI_SendStopCondtition
+ .text.MTIMER0_Init
+                0x00000216       0x20 ./MCAL/MTIMER/MTIMER_Program.o
+                0x00000216                MTIMER0_Init
+ .text.MTIMER0_SetPreload
+                0x00000236        0x4 ./MCAL/MTIMER/MTIMER_Program.o
+                0x00000236                MTIMER0_SetPreload
+ .text.MTIMER0_SetCTC
+                0x0000023a        0x4 ./MCAL/MTIMER/MTIMER_Program.o
+                0x0000023a                MTIMER0_SetCTC
+ .text.MTIMER0_OVERFLOW_CALLBACK
+                0x0000023e       0x1c ./MCAL/MTIMER/MTIMER_Program.o
+                0x0000023e                MTIMER0_OVERFLOW_CALLBACK
+ .text.MTIMER0_CTC_CALLBACK
+                0x0000025a       0x1c ./MCAL/MTIMER/MTIMER_Program.o
+                0x0000025a                MTIMER0_CTC_CALLBACK
+ .text.MTIMER0_SetDutyCycle
+                0x00000276       0x24 ./MCAL/MTIMER/MTIMER_Program.o
+                0x00000276                MTIMER0_SetDutyCycle
+ .text.MTIMER0_STOP
+                0x0000029a        0xe ./MCAL/MTIMER/MTIMER_Program.o
+                0x0000029a                MTIMER0_STOP
+ .text.__vector_10
+                0x000002a8       0x52 ./MCAL/MTIMER/MTIMER_Program.o
+                0x000002a8                __vector_10
+ .text.__vector_11
+                0x000002fa       0x52 ./MCAL/MTIMER/MTIMER_Program.o
+                0x000002fa                __vector_11
+ .text.MSPI_MasterInit
+                0x0000034c       0x14 ./MCAL/MSPI/MSPI_Program.o
+                0x0000034c                MSPI_MasterInit
+ .text.MSPI_SlaveInit
+                0x00000360        0xe ./MCAL/MSPI/MSPI_Program.o
+                0x00000360                MSPI_SlaveInit
+ .text.MSPI_SendReceive
+                0x0000036e        0xa ./MCAL/MSPI/MSPI_Program.o
+                0x0000036e                MSPI_SendReceive
+ .text.MGIE_Enable
+                0x00000378        0x8 ./MCAL/MGIE/MGIE_Program.o
+                0x00000378                MGIE_Enable
+ .text.MGIE_Disable
+                0x00000380        0x8 ./MCAL/MGIE/MGIE_Program.o
+                0x00000380                MGIE_Disable
+ .text.MEXTII0_Init
+                0x00000388       0x14 ./MCAL/MEXTI/MEXTI_Program.o
+                0x00000388                MEXTII0_Init
+ .text.MEXTII1_Init
+                0x0000039c       0x14 ./MCAL/MEXTI/MEXTI_Program.o
+                0x0000039c                MEXTII1_Init
+ .text.MEXTII2_Init
+                0x000003b0        0x2 ./MCAL/MEXTI/MEXTI_Program.o
+                0x000003b0                MEXTII2_Init
+ .text.MEXTI_Callback1
+                0x000003b2        0xe ./MCAL/MEXTI/MEXTI_Program.o
+                0x000003b2                MEXTI_Callback1
+ .text.MEXTI_Callback2
+                0x000003c0        0xe ./MCAL/MEXTI/MEXTI_Program.o
+                0x000003c0                MEXTI_Callback2
+ .text.__vector_1
+                0x000003ce       0x52 ./MCAL/MEXTI/MEXTI_Program.o
+                0x000003ce                __vector_1
+ .text.__vector_2
+                0x00000420       0x52 ./MCAL/MEXTI/MEXTI_Program.o
+                0x00000420                __vector_2
+ .text.MDIO_SetPortDirection
+                0x00000472       0x2c ./MCAL/MDIO/MDIO_Program.o
+                0x00000472                MDIO_SetPortDirection
+ .text.MDIO_SetPinDirection
+                0x0000049e       0xfa ./MCAL/MDIO/MDIO_Program.o
+                0x0000049e                MDIO_SetPinDirection
+ .text.MDIO_SetPortValue
+                0x00000598       0x22 ./MCAL/MDIO/MDIO_Program.o
+                0x00000598                MDIO_SetPortValue
+ .text.MDIO_SetPinValue
+                0x000005ba       0xfa ./MCAL/MDIO/MDIO_Program.o
+                0x000005ba                MDIO_SetPinValue
+ .text.MDIO_ReadPortValue
+                0x000006b4       0x2e ./MCAL/MDIO/MDIO_Program.o
+                0x000006b4                MDIO_ReadPortValue
+ .text.MDIO_ReadPinValue
+                0x000006e2       0x50 ./MCAL/MDIO/MDIO_Program.o
+                0x000006e2                MDIO_ReadPinValue
+ .text.MDIO_TogglePin
+                0x00000732       0x70 ./MCAL/MDIO/MDIO_Program.o
+                0x00000732                MDIO_TogglePin
+ .text.MDIO_SetNibbleValue
+                0x000007a2       0xac ./MCAL/MDIO/MDIO_Program.o
+                0x000007a2                MDIO_SetNibbleValue
+ .text.MADC_Init
+                0x0000084e       0x10 ./MCAL/MADC/MADC_Program.o
+                0x0000084e                MADC_Init
+ .text.MADC_StartConversion
+                0x0000085e       0x1c ./MCAL/MADC/MADC_Program.o
+                0x0000085e                MADC_StartConversion
+ .text.US_OverFlow_Counter
+                0x0000087a        0xc ./HAL/HUS/HUS_Program.o
+                0x0000087a                US_OverFlow_Counter
+ .text.US_INIT  0x00000886       0x46 ./HAL/HUS/HUS_Program.o
+                0x00000886                US_INIT
+ .text.US_Trigger
+                0x000008cc       0x1c ./HAL/HUS/HUS_Program.o
+                0x000008cc                US_Trigger
+ .text.US_EXTI_RECEIVE
+                0x000008e8       0x66 ./HAL/HUS/HUS_Program.o
+                0x000008e8                US_EXTI_RECEIVE
+ .text.HSEVEN_SEG_Display
+                0x0000094e      0x108 ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+                0x0000094e                HSEVEN_SEG_Display
+ .text.HSEVEN_SEG_SetMode
+                0x00000a56       0x22 ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+                0x00000a56                HSEVEN_SEG_SetMode
+ .text.HSEVEN_SEG_Init
+                0x00000a78       0x48 ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+                0x00000a78                HSEVEN_SEG_Init
+ .text.TIMER1_VidInit
+                0x00000ac0       0x38 ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000ac0                TIMER1_VidInit
+ .text.TIMER1_SetTopValue
+                0x00000af8        0x6 ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000af8                TIMER1_SetTopValue
+ .text.TIMER1_Set_OCR1A_Value
+                0x00000afe        0x6 ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000afe                TIMER1_Set_OCR1A_Value
+ .text.HSERVO_Rotate
+                0x00000b04       0x6a ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000b04                HSERVO_Rotate
+ .text.HSERVO_Rotate_Middle
+                0x00000b6e        0xa ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000b6e                HSERVO_Rotate_Middle
+ .text.HSERVO_Rotate_Right
+                0x00000b78        0xa ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000b78                HSERVO_Rotate_Right
+ .text.HSERVO_Rotate_Left
+                0x00000b82        0xa ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000b82                HSERVO_Rotate_Left
+ .text.HSERVO_Init
+                0x00000b8c       0x18 ./HAL/HSERVO/HSERVO_Programe.o
+                0x00000b8c                HSERVO_Init
+ .text.HKPD_GetPressedButton
+                0x00000ba4      0x13e ./HAL/HKPD/HKPD_Program.o
+                0x00000ba4                HKPD_GetPressedButton
+ .text.HKPD_Init
+                0x00000ce2       0xa2 ./HAL/HKPD/HKPD_Program.o
+                0x00000ce2                HKPD_Init
+ .text.HDCM_Stop
+                0x00000d84       0x2a ./HAL/HDCM/HDCM_Program.o
+                0x00000d84                HDCM_Stop
+ .text.HDCM_Backward_M_Right
+                0x00000dae       0x16 ./HAL/HDCM/HDCM_Program.o
+                0x00000dae                HDCM_Backward_M_Right
+ .text.HDCM_Forward_M_Right
+                0x00000dc4       0x16 ./HAL/HDCM/HDCM_Program.o
+                0x00000dc4                HDCM_Forward_M_Right
+ .text.HDCM_Backward_M_Left
+                0x00000dda       0x16 ./HAL/HDCM/HDCM_Program.o
+                0x00000dda                HDCM_Backward_M_Left
+ .text.HDCM_Right
+                0x00000df0        0xa ./HAL/HDCM/HDCM_Program.o
+                0x00000df0                HDCM_Right
+ .text.HDCM_Back
+                0x00000dfa        0xa ./HAL/HDCM/HDCM_Program.o
+                0x00000dfa                HDCM_Back
+ .text.HDCM_Forward_M_Left
+                0x00000e04       0x16 ./HAL/HDCM/HDCM_Program.o
+                0x00000e04                HDCM_Forward_M_Left
+ .text.HDCM_Left
+                0x00000e1a        0xa ./HAL/HDCM/HDCM_Program.o
+                0x00000e1a                HDCM_Left
+ .text.HDCM_Forward
+                0x00000e24        0xa ./HAL/HDCM/HDCM_Program.o
+                0x00000e24                HDCM_Forward
+ .text.HDCM_Init
+                0x00000e2e       0x52 ./HAL/HDCM/HDCM_Program.o
+                0x00000e2e                HDCM_Init
+ .text.HCLCD_WriteChar4Bit
+                0x00000e80       0x78 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000e80                HCLCD_WriteChar4Bit
+ .text.HCLCD_WriteIntegerValue
+                0x00000ef8       0xd0 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000ef8                HCLCD_WriteIntegerValue
+ .text.HCLCD_WriteString
+                0x00000fc8       0x26 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000fc8                HCLCD_WriteString
+ .text.HCLCD_WriteCommand4Bit
+                0x00000fee       0x78 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000fee                HCLCD_WriteCommand4Bit
+ .text.HCLCD_SetCursorPosition
+                0x00001066       0x20 ./HAL/HCLCD/HCLCD_Program.o
+                0x00001066                HCLCD_SetCursorPosition
+ .text.HCLCD_Init4Bit
+                0x00001086       0xb0 ./HAL/HCLCD/HCLCD_Program.o
+                0x00001086                HCLCD_Init4Bit
+ .text.EEPROM_ReadByte
+                0x00001136       0x42 ./HAL/EEPROM/EEPROM_Program.o
+                0x00001136                EEPROM_ReadByte
+ .text.EEPROM_WriteByte
+                0x00001178       0x30 ./HAL/EEPROM/EEPROM_Program.o
+                0x00001178                EEPROM_WriteByte
+ .text.main     0x000011a8      0x258 ./main.o
+                0x000011a8                main
+ .text.libgcc   0x00001400       0x44 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001400                __udivmodsi4
+ .text.libgcc   0x00001444        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001444        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001444        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001444                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001444        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001444                exit
+                0x00001444                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001444        0x4 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001448                _etext = .
+
+.data           0x00800060       0x4a load address 0x00001448
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/MUSART/MSUART_Program.o
+ .data          0x00800060        0x0 ./MCAL/MTWI/MTWI_Program.o
+ .data          0x00800060        0x0 ./MCAL/MTIMER/MTIMER_Program.o
+ .data          0x00800060        0x0 ./MCAL/MSPI/MSPI_Program.o
+ .data          0x00800060        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .data          0x00800060        0x0 ./MCAL/MEXTI/MEXTI_Program.o
+ .data          0x00800060        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .data          0x00800060        0x0 ./MCAL/MADC/MADC_Program.o
+ .data          0x00800060        0x0 ./HAL/HUS/HUS_Program.o
+ .data          0x00800060        0x0 ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+ .data          0x00800060        0x0 ./HAL/HSERVO/HSERVO_Programe.o
+ .data          0x00800060        0x0 ./HAL/HKPD/HKPD_Program.o
+ .data          0x00800060        0x0 ./HAL/HDCM/HDCM_Program.o
+ .data          0x00800060        0x0 ./HAL/HCLCD/HCLCD_Program.o
+ .data          0x00800060        0x0 ./HAL/EEPROM/EEPROM_Program.o
+ .data          0x00800060       0x30 ./main.o
+ .data          0x00800090        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800090        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800090        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800090        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.GLOB_Rising_Detect
+                0x00800090        0x1 ./HAL/HUS/HUS_Program.o
+ .data.HKPD_SwitchValues
+                0x00800091       0x10 ./HAL/HKPD/HKPD_Program.o
+                0x00800091                HKPD_SwitchValues
+ *(.rodata)
+ *(.rodata*)
+ .rodata.C.0.1319
+                0x008000a1        0x8 ./HAL/HKPD/HKPD_Program.o
+ *(.gnu.linkonce.d*)
+                0x008000aa                . = ALIGN (0x2)
+ *fill*         0x008000a9        0x1 00
+                0x008000aa                _edata = .
+                0x008000aa                PROVIDE (__data_end, .)
+
+.bss            0x008000aa        0xf
+                0x008000aa                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000aa        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000aa        0x0 ./MCAL/MUSART/MSUART_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MTWI/MTWI_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MTIMER/MTIMER_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MSPI/MSPI_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MEXTI/MEXTI_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .bss           0x008000aa        0x0 ./MCAL/MADC/MADC_Program.o
+ .bss           0x008000aa        0x0 ./HAL/HUS/HUS_Program.o
+ .bss           0x008000aa        0x0 ./HAL/HSEVEN_SEG/HSEVEN_SEG_Program.o
+ .bss           0x008000aa        0x0 ./HAL/HSERVO/HSERVO_Programe.o
+ .bss           0x008000aa        0x0 ./HAL/HKPD/HKPD_Program.o
+ .bss           0x008000aa        0x0 ./HAL/HDCM/HDCM_Program.o
+ .bss           0x008000aa        0x0 ./HAL/HCLCD/HCLCD_Program.o
+ .bss           0x008000aa        0x0 ./HAL/EEPROM/EEPROM_Program.o
+ .bss           0x008000aa        0x0 ./main.o
+ .bss           0x008000aa        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x008000aa        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008000aa        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008000aa        0x0 e:/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.Glob_OverflowISR_Ptr
+                0x008000aa        0x2 ./MCAL/MTIMER/MTIMER_Program.o
+                0x008000aa                Glob_OverflowISR_Ptr
+ .bss.Glob_CTC_ISR_Ptr
+                0x008000ac        0x2 ./MCAL/MTIMER/MTIMER_Program.o
+                0x008000ac                Glob_CTC_ISR_Ptr
+ .bss.Global_Pointer1
+                0x008000ae        0x2 ./MCAL/MEXTI/MEXTI_Program.o
+                0x008000ae                Global_Pointer1
+ .bss.Global_Pointer2
+                0x008000b0        0x2 ./MCAL/MEXTI/MEXTI_Program.o
+                0x008000b0                Global_Pointer2
+ .bss.GLOB_On_Time
+                0x008000b2        0x2 ./HAL/HUS/HUS_Program.o
+                0x008000b2                GLOB_On_Time
+ .bss.GLOB_DIS  0x008000b4        0x2 ./HAL/HUS/HUS_Program.o
+                0x008000b4                GLOB_DIS
+ .bss.GLOB_Overflow_Counter
+                0x008000b6        0x1 ./HAL/HUS/HUS_Program.o
+ .bss.CursorPosition
+                0x008000b7        0x1 ./HAL/HKPD/HKPD_Program.o
+                0x008000b7                CursorPosition
+ *(COMMON)
+ COMMON         0x008000b8        0x1 ./main.o
+                0x008000b8                states
+                0x008000b9                PROVIDE (__bss_end, .)
+                0x00001448                __data_load_start = LOADADDR (.data)
+                0x00001492                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000b9        0x0
+                0x008000b9                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000b9                PROVIDE (__noinit_end, .)
+                0x008000b9                _end = .
+                0x008000b9                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Autonomous_Car_AMIT.elf elf32-avr)
+LOAD linker stubs
