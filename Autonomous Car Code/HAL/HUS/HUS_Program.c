@@ -31,7 +31,6 @@ void US_EXTI_RECEIVE()
 		GLOB_DIS = GLOB_On_Time;
 		MDIO_SetPinValue(PIN2, MDIO_PORTC, PIN_LOW);
 		GLOB_Rising_Detect = 1;
-		TCNT0=0;
 	}
 }
 
