@@ -21,22 +21,22 @@ void HDCM_Init(void)
 	
 }
 
-void HDCM_Forward_M_Left(void)
+void HDCM_Forward_M_Right(void)
 {
 	MDIO_SetPinValue(A_1,DCmotor_PINs,PIN_LOW);
 	MDIO_SetPinValue(A_2,DCmotor_PINs,PIN_HIGH);
 }
-void HDCM_Backward_M_Left(void)
+void HDCM_Backward_M_Right(void)
 {
 	MDIO_SetPinValue(A_2,DCmotor_PINs,PIN_LOW);
 	MDIO_SetPinValue(A_1,DCmotor_PINs,PIN_HIGH);
 }
-void HDCM_Forward_M_Right(void)
+void HDCM_Forward_M_Left(void)
 {
 	MDIO_SetPinValue(A_3,DCmotor_PINs,PIN_HIGH);
 	MDIO_SetPinValue(A_4,DCmotor_PINs,PIN_LOW);
 }
-void HDCM_Backward_M_Right(void)
+void HDCM_Backward_M_Left(void)
 {
 	MDIO_SetPinValue(A_4,DCmotor_PINs,PIN_HIGH);
 	MDIO_SetPinValue(A_3,DCmotor_PINs,PIN_LOW);
@@ -64,13 +64,13 @@ void HDCM_Back(void)
 	HDCM_Backward_M_Right();
 }
 
-void HDCM_Right(void)
+void HDCM_Left(void)
 {
 	HDCM_Backward_M_Left();
 	HDCM_Forward_M_Right();
 }
 
-void HDCM_Left(void)
+void HDCM_Right(void)
 {
 	HDCM_Backward_M_Right();
 	HDCM_Forward_M_Left();
