@@ -12,10 +12,10 @@
 #define EN_1 PIN4
 #define EN_2 PIN0
 
-#define A_1 PIN3	//LEFT MOTOR
-#define A_2 PIN4	//LEFT MOTOR
-#define A_3 PIN5	//RIGHT MOTOR
-#define A_4 PIN6	//RIGHT MOTOR
+#define A_1 PIN3	//RIGHT MOTOR
+#define A_2 PIN4	//RIGHT MOTOR
+#define A_3 PIN5	//LEFT MOTOR
+#define A_4 PIN6	//LEFT MOTOR
 
 #define DCmotor_EN  MDIO_PORTD
 #define DCmotor_PINs MDIO_PORTC
